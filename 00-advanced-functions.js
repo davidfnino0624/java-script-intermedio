@@ -37,9 +37,9 @@ const handler = {
     greeting: function() {
         console.log(`Hello ${this.name}`)
     },
-    arrowGreeting:() => { // las arrow funtion crean su propio contexto y el this ya no hace referencia al nombre que esta dentro del objeto
-        console.log(`hola, ${name1}`)
-    }
+    //arrowGreeting:() => { // las arrow funtion crean su propio contexto y el this ya no hace referencia al nombre que esta dentro del objeto
+      //  console.log(`hola, ${name1}`)
+    //}
 }
 
 handler.greeting();
@@ -120,6 +120,14 @@ const thefactorial = factorial()
 
 thefactorial(5)
 
+
+function factorialfunction (x){
+    let total = 1
+    for (let r = x ; r > 1; r--){
+    total *= r
+    }
+    return total
+}
 // recursividad
 
 function factorialRecursivo(n){
