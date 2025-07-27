@@ -105,3 +105,63 @@ const numbersSet = [...new Set(numbersArray)]
 console.log(numbersSet)
 
             // union
+
+const setA = new Set ([1, 2, 3, 4])
+const setB = new Set ([3, 4, 5, 6])
+
+const union = new Set ([...setA, ...setB])
+
+console.log (union)
+
+            // Interseccion
+
+const intercetionset = new Set ([...setA].filter(element => setB.has(element)))
+
+console.log(intercetionset)
+
+            // Diferencia
+
+const diferencia = new Set([...setA].filter(element => !setB.has(element)))
+console.log(diferencia)
+
+            // convercion
+
+console.log ([...setA])
+console.log ([...setA, ...setB])
+
+        // Iteracion
+
+            //forEach
+
+setA.forEach(element => console.log(element))
+
+    // mapsAvanzados
+
+let myMap = new Map([
+    ['name', 'David'],
+    ['position', 'CEO'],
+    ['age', 25]
+])
+
+console.log(myMap)
+
+myMap.forEach((valor,clave) => console.log(`${clave}:${valor}`))
+
+        // conversion
+            // mapa a Array
+
+const arrayFromMap = Array.from(myMap)
+
+console.log(arrayFromMap)
+
+            //mapa a objeto
+
+const objectoDeMap = Object.fromEntries(myMap)
+
+console.log(objectoDeMap)
+
+            //objeto a mapa
+
+const mapFromObject = new Map(Object.entries(objectoDeMap))
+
+console.log(mapFromObject)
