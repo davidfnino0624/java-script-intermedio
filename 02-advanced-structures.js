@@ -9,7 +9,7 @@
 let numbers = [1,8,9,2,4,4]
 
 numbers.forEach(elemento => console.log(elemento))
-
+ 
             // Map
 
 let powedArray = numbers.map(elementox => elementox ** 2)

@@ -1,5 +1,19 @@
 // 1. Utiliza map, filter y reduce para crear un ejemplo diferente al de la lección
 
+let myNumbersArray = [5, 8, 6, 2, 4, 7, 9]
+
+const arrayMap = myNumbersArray.map(numbers => (numbers*8)/3)
+
+console.log(arrayMap)
+
+const arrayFilter = myNumbersArray.filter(elemento => elemento * 2 < 15)
+
+console.log(arrayFilter)
+
+const arrayReduce = myNumbersArray.reduce((accumulator, currentValue) => accumulator + currentValue - 1, 0)
+
+console.log(arrayReduce)
+
 // 2. Dado un array de números, crea uno nuevo con dichos números elevados al cubo y filtra sólo los números pares
 
 // 3. Utiliza flat y flatMap para crear un ejemplo diferente al de la lección
