@@ -26,10 +26,17 @@ console.log(newArrayFilter)
 
 // 3. Utiliza flat y flatMap para crear un ejemplo diferente al de la lección
 
+let arrayAnidado = [`comer`, [`pegarlo`, [`trabajar`, [`dormir`]]]]
 
+const flatedArray = arrayAnidado.flat(4)
 
+console.log(flatedArray)
 
+let arrayPow = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+const puntoFlatMap = arrayPow.flatMap(index => index ** 2)
+
+console.log(puntoFlatMap)
 
 // 4. Ordena un array de números de mayor a menor
 
