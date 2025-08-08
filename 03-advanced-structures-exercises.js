@@ -40,6 +40,12 @@ console.log(puntoFlatMap)
 
 // 4. Ordena un array de números de mayor a menor
 
+let desordenado = [5, 7, 2, 9, 3, 1, 6]
+
+const ordenado = desordenado.sort((a, b) => b - a)
+
+console.log(ordenado)
+
 // 5. Dados dos sets, encuentra la unión, intersección y diferencia de ellos
 
 // 6. Itera los resultados del ejercicio anterior
