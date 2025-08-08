@@ -16,7 +16,20 @@ console.log(arrayReduce)
 
 // 2. Dado un array de números, crea uno nuevo con dichos números elevados al cubo y filtra sólo los números pares
 
+const newArray = myNumbersArray.map(element => element ** 3)
+
+console.log(newArray)
+
+const newArrayFilter = newArray.filter(element => element % 2 === 0)
+
+console.log(newArrayFilter)
+
 // 3. Utiliza flat y flatMap para crear un ejemplo diferente al de la lección
+
+
+
+
+
 
 // 4. Ordena un array de números de mayor a menor
 
