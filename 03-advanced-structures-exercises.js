@@ -46,9 +46,28 @@ const ordenado = desordenado.sort((a, b) => b - a)
 
 console.log(ordenado)
 
+console.log(ordenado.reverse())
+
 // 5. Dados dos sets, encuentra la unión, intersección y diferencia de ellos
 
+let setUno = new Set([10, 11, 12, 13, 14, 15, 16])
+let setDos = new Set([15, 16, 17, 18, 19, 20, 21])
+
+const unionSet = new Set([...setUno, ...setDos])
+
+console.log(unionSet)
+
+const intercetionSet = new Set([...setUno].filter(element => setDos.has(element)))
+
+console.log(intercetionSet)
+
+const diference = new Set ([...setUno].filter(element => !setDos.has(element)))
+
+console.log(diference)
+
 // 6. Itera los resultados del ejercicio anterior
+
+
 
 // 7. Crea un mapa que almacene información se usuarios (nombre, edad y email) e itera los datos
 
