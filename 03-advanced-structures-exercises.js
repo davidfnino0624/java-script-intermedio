@@ -67,9 +67,15 @@ console.log(diference)
 
 // 6. Itera los resultados del ejercicio anterior
 
+unionSet.forEach(element => console.log(element));
 
+intercetionSet.forEach(element => console.log(element));
+
+diference.forEach(element => console.log(element));
 
 // 7. Crea un mapa que almacene información se usuarios (nombre, edad y email) e itera los datos
+
+
 
 // 8. Dado el mapa anterior, crea un array con los nombres
 
