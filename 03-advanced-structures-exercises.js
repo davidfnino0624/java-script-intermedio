@@ -75,7 +75,13 @@ diference.forEach(element => console.log(element));
 
 // 7. Crea un mapa que almacene información se usuarios (nombre, edad y email) e itera los datos
 
+let theMap = new Map([
+    ['Nombre', 'David'],
+    ['Edad', 25],
+    ['Email', 'davidnino0624@gmail.com']
+])
 
+theMap.forEach(element => console.log(element))
 
 // 8. Dado el mapa anterior, crea un array con los nombres
 
