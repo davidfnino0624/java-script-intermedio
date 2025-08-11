@@ -75,16 +75,31 @@ diference.forEach(element => console.log(element));
 
 // 7. Crea un mapa que almacene información se usuarios (nombre, edad y email) e itera los datos
 
-let theMap = new Map([
-    ['Nombre', 'David'],
-    ['Edad', 25],
-    ['Email', 'davidnino0624@gmail.com']
-])
+const theMap = new Map()
 
-theMap.forEach(element => console.log(element))
+theMap.set('davidnino', { Nombre: 'David', Edad: 25, Email: 'davidnino0624@gmail.com'})
+theMap.set('anag', { Nombre: 'Ana', Edad: 30, Email: 'ana.g@example.com' })
+theMap.set('jperez', { Nombre: 'Juan', Edad: 17, Email: 'juan.p@example.com' })
+
+theMap.forEach((datos1, id) => {
+    console.log(`ID: ${id}, Datos:`, datos1)
+    }
+)
 
 // 8. Dado el mapa anterior, crea un array con los nombres
 
+const arrayDeValores = Array.from(theMap.values())
+console.log(arrayDeValores)
+
+const arrayDeNombres = arrayDeValores.map(user => user.Nombre)
+console.log(arrayDeNombres)
+
 // 9. Dado el mapa anterior, obtén un array con los email de los usuarios mayores de edad y transfórmalo a un set
+
+const arrayDeMayores = arrayDeValores.filter(user => user.Edad > 17)
+console.log(arrayDeMayores)
+
+const arrayEmails = new Set(arrayDeMayores.map(user => user.Email))
+console.log(arrayEmails)
 
 // 10. Transforma el mapa en un objeto, a continuación, transforma el objeto en un mapa con clave el email de cada usuario y como valor todos los datos del usuario
