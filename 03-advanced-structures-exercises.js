@@ -103,3 +103,16 @@ const arrayEmails = new Set(arrayDeMayores.map(user => user.Email))
 console.log(arrayEmails)
 
 // 10. Transforma el mapa en un objeto, a continuación, transforma el objeto en un mapa con clave el email de cada usuario y como valor todos los datos del usuario
+
+const objetoDelMapa = Object.fromEntries(theMap)
+
+console.log(objetoDelMapa)
+
+let objetoPorEmail = {}; 
+
+Object.entries(objetoDelMapa).forEach(([userName, datosUsuario]) => {
+    const { Email, ...resto } = datosUsuario;
+    objetoPorEmail[Email] = { userName, ...resto };
+});
+
+console.log(objetoPorEmail)
