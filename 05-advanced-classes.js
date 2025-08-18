@@ -24,3 +24,25 @@ person1.sayLanguage = function() {
 
 person1.sayLanguage()
 
+// clase abstacta
+
+class Animal{
+    constructor(nombre, especie, sonido){
+        if(new.target === Animal){
+            throw new Error(`No se puede instanciar una clase abstracta`)
+        }
+        this.nombre = nombre,
+        this.especie = especie,
+        this.sonido = sonido
+    }
+    makeSound = function(){
+        //console.log(`${this.sonido}`)
+        throw new Error(`Este metodo tiene que ser implementado por la subclase`)
+    }
+}
+
+const perro = new Animal(`Tony`, `chandoso`, `waff`)
+console.log(perro)
+
+//
+
